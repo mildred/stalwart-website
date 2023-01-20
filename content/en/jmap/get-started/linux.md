@@ -111,6 +111,10 @@ be changed using the following Stalwart Command Line Interface (CLI) tool comman
 /usr/local/stalwart-jmap/bin/stalwart-cli -u https://YOUR_HOSTNAME -c changeme account update admin -p NEW_PASSWORD
 ```
 
+Be sure to restart the ``stalwart-jmap`` daemon after that, until then, both password stay valid.
+
+You can also set up the password offline using ``stalwart-jmap`` while not running. Just run ``SET_ADMIN_PASSWORD=NEW_PASSWORD /usr/local/stalwart-jmap/bin/stalwart-jmap`` while the server is not running and it will set the admin password and exit.
+
 ## Next steps
 
 Now that you have Stalwart JMAP up and running, you can proceed to [create](/jmap/manage/accounts) accounts for
